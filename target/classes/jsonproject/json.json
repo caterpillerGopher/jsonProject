@@ -1,0 +1,47 @@
+{
+	"port": "6363",
+	"backend": "MOUNTEBANK",
+	"api": [{
+		"apitype": "dispute-txn",
+		"header": {
+			"Content-Type":"application/json",
+			"Accept":"application/json"
+		},
+		"status": "200",
+		"urlPath": {
+			"endsWith": "/transaction-dispute"
+		},
+		"urlQueryParams":{
+			"test": "test",
+	
+			"working": "true"
+		},
+
+		"responsebody": "/GOPHER/jsonproject/src/resource/java/jsonproject/json.json",
+		"method": "POST",
+		"tocreate": "true"
+	}
+	
+	
+	{
+		"apitype": "dispute-txn1",
+		"header": {
+			"Content-Type":"application/json",
+			"Accept":"application/json"
+		},
+		"status": "200",
+		"urlPath": {
+			"endsWith": "/transaction-dispute"
+		},
+		"urlQueryParams":{
+			"test": "test",
+	
+			"working": "true"
+		},
+
+		"responsebody": "/GOPHER/jsonproject/src/resource/java/jsonproject/json.json",
+		"method": "POST",
+		"tocreate": "true"
+	}]
+
+}
